@@ -24,9 +24,8 @@ window.addEventListener('DOMContentLoaded',() => {
                 newItem.classList.add('text-area_item');
                 newItem.innerHTML = `
                 <input value="${valueOfinp}" type="text" class="text-area_item__text"/>
-                <button class="text-area_item__succ btn btn-success">OK</button>
+                <button class="text-area_item__succ btn btn-success">ok</button>
                 <button class="text-area_item__remove btn btn-danger">X</button>
-
                 <span class="oko"></span>
             `;
             areaFordata.prepend(newItem);
@@ -44,9 +43,16 @@ window.addEventListener('DOMContentLoaded',() => {
         areaFordata.addEventListener('click',(e) => {
             e.preventDefault();
             if(e.target && e.target.classList.contains('text-area_item__succ')){
-                
                 e.target.parentElement.querySelector('.oko').classList.toggle('active');
+                if(e.target.classList.contains('btn-success')){
+                    e.target.classList.remove('btn-success')
+                    e.target.classList.add('btn-warning')
+                }else{
+                    e.target.classList.remove('btn-warning')
+                    e.target.classList.add('btn-success')
+                }
             }
+
         });
 });
 //litetodolist
