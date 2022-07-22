@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+.wrapper {
+  margin: 0 auto;
+  background-color: burlywood;
+
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 50em;
+  margin-top: 50px;
+}
+
+.header {
+  color: rgb(247, 247, 247);
+  padding: 5px;
+  text-align: center;
+  background-color: chocolate;
+  font-size: 25px;
+}
+
+.workspace {
+  padding: 10px;
+  background-color: aquamarine;
+}
+
+.workspace-content {
+  min-width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.input {
+  width: 80%;
+  padding: 5px;
+  font-size: 20px;
+  border: 2px solid transparent;
+}
+
+/* .btn {
+  text-align: center;
+  width: 20%;
+  padding: 5px 10px;
+  background-color: cornflowerblue;
+} */
+.text-area{
+  margin: 0;
+  padding: 0;
+}
+.text-area_item {
+  position: relative;
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  background-color: azure;
+  position: relative;
+
+}
+.oko{
+  display: none;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: calc(100% - 80px);
+  height: 100%;
+}
+.oko.active{
+  display: block;
+}
+.oko::before{
+  left: 0;
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  opacity: .7;
+  background-color: rgb(219, 212, 212);
+}
+.oko::after{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 2px;
+  background-color: #000;
+  top: calc(50% - 1px);
+}
+
+.text-area_item__text {
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  padding: 5px 80px 5px 5px;
+}
+
+.text-area_item__remove {
+  width: 40px;
+  border-radius: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 20px;
+  height: 100%;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.text-area_item__succ{
+  width: 40px;
+  border-radius: 0;
+  position: absolute;
+  right: 40px;
+  top: 0;
+  font-size: 12px;
+  height: 100%;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
